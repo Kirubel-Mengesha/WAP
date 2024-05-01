@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tina's Closet</title>
+    <link rel="shortcut icon" href="./images.png">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+  <div class="head">
+    <img src="./images.png" alt="perfume" width="70" height="70">
+    <span id ="name1">Welcome, Tina</span>
+    <span id="name2">Logout</span>
+    <hr>
+    </div>
+    <div id="products"> Product Lists </div>
+    <table>
+        <tbody>
+        <tr>
+            <th>Name</th>
+            <th>price</th>
+            <th>Stock</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Node.js</td>
+            <td>9.99</td>
+            <td>8</td>
+            <td><img src="./shopping cart.jpg" alt="shopping cart" width="25" height="25"></td>
+        </tr>
+
+        <tr>
+            <td>React</td>
+            <td>19.99</td>
+            <td>5</td>
+            <td><img src="./shopping cart.jpg" alt="shopping cart" width="25" height="25"></td>
+        </tr>
+
+        <tr>
+            <td>Angular.js</td>
+            <td>29.99</td>
+            <td>13</td>
+            <td><img src="./shopping cart.jpg" alt="shopping cart" width="25" height="25"></td>
+        </tr>
+    </tbody>
+    </table>
+  </div>
+
+  <div id = "shopping">Your Shopping Cart</div>
+    <table>
+        <tbody>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td>Node.js</td>
+                <td>9.99</td>
+                <td>9.99</td>
+                <td>- <span id="quantity1">1</span> +</td>
+            </tr>
+            <tr>
+                <td>Angular</td>
+                <td>29.99</td>
+                <td>290.99</td>
+                <td>- <span id="quantity2">10</span> +</td>
+            </tr>
+            <tr>
+                <td colspan = "4" id = "Total"> Total: 300.98</td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="order" >Place Order</div>
+    <a href="">
+        <img src="./HTML-checker.png" alt="HTML-checker" width="100">
+    </a>
+    <a href="">
+        <img src="./css_checker.png" alt="css_checker" width="100">
+    </a>
+</body>
+</html>

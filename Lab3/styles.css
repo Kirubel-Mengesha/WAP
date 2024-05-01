@@ -1,0 +1,88 @@
+.head{
+    color: brown;
+    background-color: rgb(160, 211, 160);
+}
+#name1,#name2{
+    margin-left: 500px;
+}
+#name1{
+   
+   font-size: 20px;
+   font-weight: bold;
+}
+
+
+#name2{
+        float: right;
+        border:2px solid rgb(37, 37, 231);
+        border-radius: 15px;
+        background-color: rgb(188, 209, 93);  
+        width: 75px;
+        height: 5;
+        text-align: center;
+}
+
+#products{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 200px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+th,td{
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+    color: black
+}
+ th{
+    background-color: rgb(196, 183, 13);
+ }
+
+ #shopping{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 200px;
+    font-size: 20px;
+    font-weight: bold;
+ }
+ #Total{
+    border: 1px solid black;
+    text-align: right;
+   
+ }
+ #quantity1,#quantity2{
+    border: 1px solid black;
+    font-size: large;
+    
+  
+ }
+ #order{
+    color: black;
+    font-size: large;
+    border: 1px solid rgb(196, 183, 13);
+    border-radius: 13px;
+    text-align: center;
+    padding: 1px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 1000px; 
+    
+ }
+ #order:hover{
+    background-color: rgb(223, 62, 22);
+ }
+ #name2:hover{
+    background-color: rgb(223, 62, 22);
+ }
+ a{
+    margin: 60px;
+ }
+
+
