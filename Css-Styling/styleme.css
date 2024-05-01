@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(78, 85, 85);
+    color: white;
+}
+
+p span{
+    color: yellow;
+}
+
+
+#imdb span{
+    color: red;
+   
+}
+
+h1{
+    font-size: 50px;
+    text-decoration: none;
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1, h2{
+    color: rgb(105, 174, 230);
+}
+
+
+#flex {
+    display: flex;
+    align-items: center; 
+}
+
+.moodpics img{
+    width: 400px;
+    margin-right: 20px;
+}
+
+/* styleme.css */
+
+/* Remove underline by default */
+a {
+    text-decoration: none;
+}
+
+/* Add underline on hover */
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+#checker{
+    display: flex;
+}
+
+#checker img{
+    width: 100px;
+
+    margin-right: 20px;
+}
