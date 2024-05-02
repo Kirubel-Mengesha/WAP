@@ -44,6 +44,9 @@ th,td{
  th{
     background-color: rgb(196, 183, 13);
  }
+ tr:hover 
+ {background-color: #D6EEEE;
+}
 
  #shopping{
     margin-top: 20px;
