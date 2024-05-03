@@ -1,85 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 19px;
+}
 
-#titled{
-    text-align: left;
+#page {
+    border-color: rgba(34, 139, 130, 0.5);
+    border-radius: 0.5px;
+    border-style: solid;
+    padding: 10px;
+}
+
+#header {
     background-color: cadetblue;
-    color: black;
+    padding: 10px;
+}
+
+#title {
     font-size: 20px;
     font-weight: bold;
-    padding: 20px;
+    padding-right: 30px;
 }
-#next{
+
+#body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#left, #right {
+    flex: 1;
+    padding: 10px;
+}
+
+.asterix {
+    color: red;
+}
+
+.underlinedText {
     text-decoration: underline;
 }
-input{
-    margin-left: 75px; 
+
+#checkBoxes {
+    display: flex;
+    flex-direction: column;
 }
-label{
-    margin: 5px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
+
+#paymentMode {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
-div{
+
+button {
+    background-color: cadetblue;
+    color: white;
+    padding: 3px 20px;
+    text-align: center;
     margin: 10px;
 }
-textarea{
-    margin-left: 100px;
+
+label {
+    font-weight: bold;
 }
-select{
-    margin-left: 100px;
+
+.unit {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
 }
-.right{
-    text-align: center;
+
+.item {
+    flex: 1;
+    margin-right: 10px;
 }
-#payment{
-    border-bottom: 1px solid black;   
+
+.center {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    clear: both;
 }
-.last{
-position: absolute;
-  top: 450px;
-  left: 600px;
-}
-#details{
-    text-decoration: underline;
-}
-#lunch{
-    text-decoration: underline;
-}
-#cash{
-    position: absolute;
-    top: 310px;
-    left: 800px;
-}
-#cheque{
-    position: absolute;
-    top: 345px;
-    left: 800px;
-}
-#demand{
-    position: absolute;
-    top: 370px;
-    left: 800px;
-}
-.meals{
-    width: 100px;
-    height: 20px;
-}
-.bottom{
-    padding-bottom: 20px;
-    background-color: rgb(194, 199, 199);
-    text-align: center;
-    margin: 20px;
-}
-button{
-    background-color: cadetblue;
-    margin: 20px;
+.VerificationPic{
     width: 70px;
-    height: 40px;
-    border-radius: 10px;
-    cursor: pointer;
-
-}
-#checker img{
-    width: 100px;
-
-    margin-right: 20px;
-}
+  }

@@ -3,110 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
     <link rel="stylesheet" href="./style.css">
+    <title>Workshop Registration</title>
 </head>
 <body>
-    <div id="titled"> WorkShop Registration <span><select name="more action">
-     <option selected disabled>More Action</option>
-     <option>Courses</option>
-     <option>Registration</option>
- </select></span></div> 
- 
-    <span id="next">Register now while seat are available</span>
- 
-    <div class="right" id="lunch">Lunch</div>
-    
- <form id="form">
-    <div> <label>First Name</label>
-     <input id="firstname" placeholder="First Name"></div>
- 
-     <div class="right"> <label>Meal Preference</label>
-     <select class="meals">
-         <option> Vegetable</option>
-         <option> Meat</option>
-         <option> Pizza</option>
-     </select>
-     </div>
- 
-     <div><label for="lastname" >Last Name</label>
-     <input id="lastname" placeholder="Last Name"></div>
- 
-     <div class="right" id="details"> Payment Details</div>
- 
-     <div><label for="company">Company/Institution</label>
-     <input id="company" placeholder="Company/Institution"></div>
- 
-     <div class="right"> <label>Payment Mode</label>
-        <div class="check"><div> <input type="checkbox" name="Cash">
-         <label id ="cash">cash</label></div>
-         <div><input type="checkbox" name="cheque">
-         <label id="cheque">Cheque</label></div>
-         <div><input type="checkbox" name="demand draft">
-         <label id="demand">Demand Draft</label></div>
-     </div>
-     </div>
- 
-     <div><label for="address">Address</label></div>
-         <div><textarea rows = "8" cols="39" name="address" id="address"></textarea></div>
- 
-         <div><label for="city"> City</label>
-         <input id="city"></div>
- 
-     <div>
-         <label>State/Province/Region</label>
-         <select>
-             <option id="state" selected disabled>-Select-</option>
-             <option>Iowa</option>
-             <option>California</option>
-             <option>DC</option>
-             <option>Texax</option>
-         </select>
-     </div>
- 
-     <div>
-         <label> Country</label>
-         <select>
-         <option id="country" selected disabled>-Select-</option>
-         <option>US</option>
-         <option>China</option>
-         <option>German</option>
-         <option>Japan</option>
-         </select>
-     </div>
- 
-     <div>
-         <label for="email"> Email</label>
-         <input id="email" name="email">
-     </div>
-     <div>
-         <label for="phone">Phone no</label>
-         <input id="phone">
-     </div>
-     <div class="last">
-         <div>
-         <label>DD/Cheque No.</label>
-         <input type="text" name="dd" id="dd"></div>
-         <div><label>Drawn on (Bank Name)</label>
-         <input type="text" name="drawn" id="drawn"></div>
-         <div>
-             <label>Payable At</label>
-             <input type="text" name="payable" id="payable"></div>
-     </div>
-     <div class="bottom">
-         <button id="Submit" type="submit">Submit</button>
-         <button id="Reset" type="reset">Reset</button>
-     </div>
- </form>
- <div id = "checker">
-    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fkirasolo.github.io%2FWAP%2FLab4%2Findex.html">
-        <img src="./HTML-checker.png" alt="html cheker">
-    </a>
-     <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkirasolo.github.io%2FWAP%2FLab4%2Findex.html">
-        <img src="./css_checker.png" alt="css checker">
-     </a>
-    
-</div>
+    <div id="page">
+        <div id="header">
+            <span id="title">Workshop Registration</span>
+            More Actions <select name="t" id="t">
+                <option value="">+</option>
+                <option value="">*</option>
+                <option value="">#</option>
+            </select>
+        </div>
+        <br>
+        <p class="underlinedText">Register now while seats are available!!</p>
 
- </body>
+        <div id="body">
+            <div id="left">
+                <form action="#">
+                    <div class="unit">
+                        <div class="item">
+                            <label for="fname">First name <span class="asterix">*</span></label>
+                        </div>
+                        <div class="item">
+                            <input type="text" name="fname" id="fname" required>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <div class="item">
+                            <label for="lname">Last name <span class="asterix">*</span></label>
+                        </div>
+                        <div class="item">
+                            <input type="text" name="lname" id="lname" required>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <div class="item">
+                            <label for="companyInstitution">Company Institution <span class="asterix">*</span></label>
+                        </div>
+                        <div class="item">
+                            <input type="text" name="companyInstitution" id="companyInstitution" required>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <div class="item">
+                            <label for="address">Address <span class="asterix">*</span></label>
+                        </div>
+                        <div class="item">
+                            <textarea name="address" id="address" cols="30" rows="10" required></textarea>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <div class="item">
+                            <label for="city">City</label>
+                        </div>
+                        <div class="item">
+                            <input type="text" name="city" id="city">
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <div class="item">
+                            <label for="region">State / Province / Region</label>
+                        </div>
+                        <div class="item">
+                            <select name="region" id="region">
+                                <option value="0">-Select-</option>
+                                <option value="1">Iowa</option>
+                                <option value="2">Washington</option>
+                                <option value="3">Virginia</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <div class="item">
+                            <label for="country">Country</label>
+                        </div>
+                        <div class="item">
+                            <select name="country" id="country">
+                                <option value="0">-Select-</option>
+                                <option value="1">USA</option>
+                                <option value="2">Ethiopia</option>
+                                <option value="3">Canada</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <div class="item">
+                            <label for="email">Email <span class="asterix">*</span></label>
+                        </div>
+                        <div class="item">
+                            <input type="text" name="email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <div class="item">
+                            <label for="pNum">Phone Number <span class="asterix">*</span></label>
+                        </div>
+                        <div class="item">
+                            <input type="text" name="pNum" id="pNum" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="right">
+                <p class="underlinedText" >Lunch</p>
+                <div class="unit">
+                    <div class="item">
+                        <label for="meals">Meal Preference</label>
+                    </div>
+                    <div class="item">
+                        <select name="meals" id="meals">
+                            <option value="">Vegetarian</option>
+                            <option value="">Non-Vegetarian</option>
+                            <option value="">Vegan</option>
+                        </select>
+                    </div>
+                </div>
+                <p class="underlinedText">Payment Details</p>
+                <div class="unit">
+                    <div class="item">
+                        <label>Payment Mode</label>
+                    </div>
+                    <div class="item" id="checkBoxes">
+                        <label for="cash"><input type="checkbox" name="paymentMode" id="cash">Cash</label>
+                        <label for="cheque"><input type="checkbox" name="paymentMode" id="cheque">Cheque</label>
+                        <label for="dd"><input type="checkbox" name="paymentMode" id="dd">Demand Draft</label>
+                    </div>
+                </div>
+                <div class="unit">
+                    <div class="item">
+                        <label for="cNum">DD/Cheque No.</label>
+                    </div>
+                    <div class="item">
+                        <input type="text" name="cNum" id="cNum">
+                    </div>
+                </div>
+                <div class="unit">
+                    <div class="item">
+                        <label for="BName">Drawn On (Bank Name)</label>
+                    </div>
+                    <div class="item">
+                        <input type="text" name="BName" id="BName">
+                    </div>
+                </div>
+                <div class="unit">
+                    <div class="item">
+                        <label for="pAt">Payable at</label>
+                    </div>
+                    <div class="item">
+                        <input type="text" name="pAt" id="pAt">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+        <div class="">
+            <a href="">
+            <img class="VerificationPic" src="./HTML-checker.png" alt="html validator">
+          </a>
+          <a
+            href="https://jigsaw.w3.org/css-validator/validator?uri=">
+            <img class="VerificationPic" src="./css_checker.png" alt="css validator">
+          </a>
+        </div>
+    </div>
+</body>
 </html>
