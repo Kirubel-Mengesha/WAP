@@ -8,4 +8,4 @@ const getNewArray = function(arr) {
 
 // Example usage:
 const stringArray = ["apple", "banana", "grape", "kiwi", "orange"];
-console.log(getNewArray(stringArray)); // Output will be ["apple", "banana", "grape"]
+console.log(getNewArray(stringArray)); 

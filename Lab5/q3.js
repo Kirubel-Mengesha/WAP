@@ -12,6 +12,5 @@ const concat = (...args) => {
     }, []);
 };
 
-// Example usage:
 console.log(concat('hi', [1, 2, 3], ['Hello', 'world'])); 
-// Output will be: ['h', 'i', 1, 2, 3, 'Hello', 'world']
+

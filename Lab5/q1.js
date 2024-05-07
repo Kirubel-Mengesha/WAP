@@ -9,4 +9,4 @@ function sum(arr) {
 
 // Example usage:
 const myArray = [15, 25, 30, 10, 5, 40];
-console.log(sum(myArray)); // Output will be 95
+console.log(sum(myArray)); 
