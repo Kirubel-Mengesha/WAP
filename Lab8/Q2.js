@@ -1,35 +1,26 @@
-function Student(firstName, lastName) {
+function Student(firstName, lastName, grades = []) {
     this.firstName = firstName;
     this.lastName = lastName;
-    this.grades = [];
-
-    // Method to add a new grade
-    this.inputNewGrade = function(newGrade) {
-        this.grades.push(newGrade);
-    };
-
-    // Method to compute the average grade
-    this.computeAverage = function() {
-        if (this.grades.length === 0) {
-            return 0;
-        } else {
-            var sum = this.grades.reduce(function(total, grade) {
-                return total + grade;
-            }, 0);
-            return sum / this.grades.length;
-        }
-    };
+    this.grades = grades;
 }
-
-// Example usage
-var student1 = new Student("John", "Doe");
-student1.inputNewGrade(85);
-student1.inputNewGrade(90);
-student1.inputNewGrade(75);
-console.log(student1.computeAverage()); // Output: 83.33333333333333
-
-var student2 = new Student("Alice", "Smith");
-student2.inputNewGrade(92);
-student2.inputNewGrade(88);
-student2.inputNewGrade(95);
-console.log(student2.computeAverage()); // Output: 91.66666666666667
+Student.prototype.inputNewGrade = function (newGrade) {
+    this.grades.push(newGrade);
+}
+Student.prototype.computeAverageGrade = function () {
+    return this.grades.reduce((sum, current, index, array) => sum + current /
+        array.length, 0);
+}
+const stu1 = new Student('John', 'Smith');
+stu1.inputNewGrade(88);
+stu1.inputNewGrade(78);
+stu1.inputNewGrade(96);
+stu1.inputNewGrade(80);
+const stu2 = new Student('Kira', 'Solo');
+stu2.inputNewGrade(85);
+stu2.inputNewGrade(95);
+stu2.inputNewGrade(85);
+stu2.inputNewGrade(77);
+const students = [stu1, stu2];
+const result = students.reduce((average, stu, index, array) => average +
+    stu.computeAverageGrade() / array.length, 0);
+console.log(result);
