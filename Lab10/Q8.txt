@@ -1,6 +1,5 @@
-using bind but you have to call it ()()  -> output: { firstname: 'John', lastname: 'Smith' }
-using call -> output: { firstname: 'John', lastname: 'Smith' }
-The primary difference between .apply() and .call() lies in how arguments are passed to the function being invoked:
-.apply(null, [null, { exports: {} }]) passes arguments as an array.
-.call(null, null, { exports: {} }) passes arguments individually.
-
+//output
+{ firstname: 'John', lastname: 'Smith' }
+So, the output { firstname: 'John', lastname: 'Smith' } reflects the state of module.exports after executing the IIFE, 
+where exports has { firstname: 'John' } and lastname is 'Smith'. The getFullName function defined inside the IIFE does not affect the output 
+since it's not returned or accessible outside the IIFE.
