@@ -10,7 +10,7 @@ Student.prototype.computeAverageGrade = function () {
     return this.grades.reduce((sum, current, index, array) => sum + current /
         array.length, 0);
 }
-const stu1 = new Student('John', 'Smith');
+const stu1 =  new Student('John', 'Smith');
 stu1.inputNewGrade(88);
 stu1.inputNewGrade(78);
 stu1.inputNewGrade(96);

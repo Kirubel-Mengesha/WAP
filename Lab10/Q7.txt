@@ -1,0 +1,5 @@
+output: Error Cannot find module './pattern2'
+
+In app.js, you're trying to destructure getFullname from pattern2.js, 
+but the file is named pattern1.js.
+Inorder to fix that just change the file name to ./pattern1

@@ -1,0 +1,6 @@
+//output: typeError
+ it will result in an error because getName is not a function.
+ Instead, it's an object with a getName function attached to it.
+
+ To correct this, you should either directly call the getName function on the imported object 
+ or destructure it during the import.

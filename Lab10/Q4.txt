@@ -1,0 +1,9 @@
+//output in node
+undefined
+
+//output in browser
+Hello World
+
+The reason for the different outputs lies in how JavaScript handles the this keyword in different environments
+In Node.js, the output is 'undefined' because this.message doesn't exist in the global object, 
+whereas in a browser environment, the output is 'Hello World' because this.message refers to the global message variable.

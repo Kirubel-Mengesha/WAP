@@ -59,7 +59,7 @@ group.showList();
 //     showList: function () {
 //         this.students.forEach((student) => {
 //             console.log(this.title + ": " + student);
-//         });
+//         }.call(this, student));
 //     }
 // };
 

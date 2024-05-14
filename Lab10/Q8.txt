@@ -1,0 +1,6 @@
+using bind but you have to call it ()()  -> output: { firstname: 'John', lastname: 'Smith' }
+using call -> output: { firstname: 'John', lastname: 'Smith' }
+The primary difference between .apply() and .call() lies in how arguments are passed to the function being invoked:
+.apply(null, [null, { exports: {} }]) passes arguments as an array.
+.call(null, null, { exports: {} }) passes arguments individually.
+

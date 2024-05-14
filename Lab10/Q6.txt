@@ -1,0 +1,3 @@
+output: Error Cannot find module './pattern2'
+we are trying to import pattern2.js, but the file is named pattern1.js, 
+so we get an error. We can fix this by renaming the file to pattern2.js.

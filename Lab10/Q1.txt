@@ -1,0 +1,31 @@
+In Node.js, there are several types of callback queues, each serving a different purpose in managing asynchronous operations:
+
+1.Event Loop Queue:
+This is the main queue responsible for handling callbacks of I/O events, timers, and other asynchronous operations.
+For example, when you read a file using fs.readFile(), the callback for this operation is enqueued in the event loop queue. Similarly, when a timer set using setTimeout() expires, its callback is also enqueued here.
+// Example of I/O operation callback enqueued in the event loop queue
+const fs = require('fs');
+fs.readFile('file.txt', (err, data) => {
+    if (err) {
+        console.error(err);
+        return;
+    }
+    console.log(data);
+});
+
+2.Microtask Queue:
+This queue is used to manage callbacks for microtasks. Microtasks are usually higher-priority tasks and are executed before the next cycle of the event loop.
+Examples of microtasks include promises' .then() and catch() callbacks, as well as process.nextTick().
+// Example of a promise's .then() callback enqueued in the microtask queue
+Promise.resolve('resolved value')
+    .then(value => console.log(value));
+
+
+
+3.Timer Queue:
+This queue manages callbacks for timers set using setTimeout() and setInterval().
+When a timer expires, its callback is enqueued in this queue.
+// Example of timer callback enqueued in the timer queue
+setTimeout(() => {
+    console.log('Timer callback executed');
+}, 1000);
